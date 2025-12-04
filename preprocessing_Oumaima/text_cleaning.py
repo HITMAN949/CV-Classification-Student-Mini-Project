@@ -1,72 +1,97 @@
 import re
 import string
+import spacy
 import nltk
 from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize
-from nltk.stem import WordNetLemmatizer
+from sklearn.feature_extraction.text import CountVectorizer
+import warnings
+warnings.filterwarnings('ignore')
 
-# Download necessary NLTK data
 try:
-    nltk.data.find('tokenizers/punkt')
-except LookupError:
-    nltk.download('punkt')
+    nlp = spacy.load('en_core_web_sm')
+except OSError:
+    print("Downloading 'en_core_web_sm' model...")
+    from spacy.cli import download
+    download("en_core_web_sm")
+    nlp = spacy.load('en_core_web_sm')
 
 try:
     nltk.data.find('corpora/stopwords')
 except LookupError:
     nltk.download('stopwords')
-
-try:
-    nltk.data.find('corpora/wordnet')
-except LookupError:
-    nltk.download('wordnet')
-
+my_stop_words = set(stopwords.words('english') + ['``', "''"])
+def remove_pattern(text, pattern_regex):
+    """
+    Removes a specific regex pattern from the text.
+    """
+    r = re.findall(pattern_regex, text)
+    for i in r:
+        text = re.sub(i, '', text)
+    return text
+def remove_emoji(text):
+    """
+    Removes emojis from the text.
+    """
+    emoji_pattern = re.compile(
+        u"[\U0001F600-\U0001F64F"  
+        u"\U0001F300-\U0001F5FF"  
+        u"\U0001F680-\U0001F6FF"  
+        u"\U0001F1E0-\U0001F1FF"
+        u"\u24C2\u1F150-\u1F151"
+        u"]+", flags=re.UNICODE)
+    return emoji_pattern.sub(r'', text)
 def clean_text(text):
     """
-    Cleans and normalizes the input text using NLTK.
-    
-    Steps:
-    1. Lowercase
-    2. Remove URLs and Emails (regex)
-    3. Remove special characters/numbers (regex)
-    4. Tokenize
-    5. Remove stopwords
-    6. Lemmatize
-    7. Join back to string
-    
-    Args:
-        text (str): Raw text.
-        
-    Returns:
-        str: Cleaned text.
+    Performs basic text cleaning: lowercasing, removing URLs, punctuation, numbers, etc.
     """
-    if not isinstance(text, str):
-        return ""
-    
-    # 1. Convert to lowercase
     text = text.lower()
+    text = re.sub('!', '', text)
+    text = re.sub('\[.*?\]', '', text)
+    text = re.sub('⇨', '', text)
+    text = re.sub(':', '', text)
+    text = re.sub('•', '', text)
+    text = re.sub('https?://\S+|www\.\S+', '', text)
+    text = re.sub('<.*?>+', '', text)
+    text = re.sub('[%s]' % re.escape(string.punctuation), '', text)
+    text = re.sub('\n', '', text)
+    text = re.sub('\w*\d\w*', '', text)
+    return text
+def preprocess_pipeline(text):
+    """
+    Complete preprocessing pipeline:
+    1. Clean text (remove noise)
+    2. Remove emojis
+    3. Remove stop words
+    4. Lemmatize
+    """
     
-    # 2. Remove URLs
-    text = re.sub(r'http\S+|www\S+|https\S+', '', text, flags=re.MULTILINE)
+    text = clean_text(text)
+
+    text = remove_emoji(text)
     
-    # 3. Remove email addresses
-    text = re.sub(r'\S+@\S+', '', text)
     
-    # 4. Remove special characters and numbers (keep only letters and spaces)
-    text = re.sub(r'[^a-zA-Z\s]', '', text)
+    tokens = text.split()
+    tokens = [word for word in tokens if word not in my_stop_words]
     
-    # 5. Tokenize
-    tokens = word_tokenize(text)
     
-    # 6. Remove stopwords
-    stop_words = set(stopwords.words('english'))
-    tokens = [word for word in tokens if word not in stop_words]
+    text = " ".join(tokens)
     
-    # 7. Lemmatize
-    lemmatizer = WordNetLemmatizer()
-    tokens = [lemmatizer.lemmatize(word) for word in tokens]
     
-    # 8. Join tokens back to string
-    cleaned_text = ' '.join(tokens)
+    doc = nlp(text)
+    lemmas = [token.lemma_ for token in doc]
     
-    return cleaned_text
+   
+    return " ".join(lemmas)
+
+cv_ngram_range = CountVectorizer(analyzer='word', ngram_range=(1,3), max_features=4000)
+if __name__ == "__main__":
+    
+    sample_text = "Experienced Software Engineer with skills in Python, Java, and 10+ years of experience! 🚀"
+    processed_text = preprocess_pipeline(sample_text)
+    print(f"Original: {sample_text}")
+    print(f"Processed: {processed_text}")
+    
+    
+    corpus = [processed_text]
+    matrix = cv_ngram_range.fit_transform(corpus)
+    print(f"Vectorized shape: {matrix.shape}")
