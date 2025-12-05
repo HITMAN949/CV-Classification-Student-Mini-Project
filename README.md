@@ -116,7 +116,7 @@ Then open `http://localhost:8501` in your browser.
 ## 👥 Team
 - **Oumaima** - Data & Preprocessing
 - **Moad Chafir** - Model Training & Evaluation
-- **Houssam** - Web Interface
+- **Houssam** - Web Interface & Debugging & Documentation
 
 ## 📝 License
 This project is for educational purposes.
