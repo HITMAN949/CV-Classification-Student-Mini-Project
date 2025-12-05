@@ -118,5 +118,15 @@ Then open `http://localhost:8501` in your browser.
 - **Moad Chafir** - Model Training & Evaluation
 - **Houssam** - Web Interface & Debugging & Documentation
 
+## 📊 Predict All CVs
+A new script `predict_all.py` prédit la catégorie de chaque CV présent dans `processed_resumes.csv` et enregistre le résultat dans `predicted_resumes.csv`.
+
+```bash
+python modeling_MoadChafir/predict_all.py
+```
+
+Le CSV de sortie contient une colonne supplémentaire `predicted_category` avec la prédiction du modèle pour chaque CV.
+
+
 ## 📝 License
 This project is for educational purposes.

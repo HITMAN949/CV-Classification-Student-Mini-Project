@@ -1,0 +1,265 @@
+category,filename,raw_text,cleaned_text,predicted_category
+Engineering,dummy_resume.txt,"John Doe
+Software Engineer
+Skills: Python, Java, Machine Learning
+Experience: 5 years at Tech Corp.
+Education: BS in Computer Science.
+",john doe software engineer skills python java machine learning experience 5 years at tech corp education bs in computer science,Engineering
+Engineering,resume2.txt,"Bob Johnson
+Senior Engineer
+Skills: C++, Embedded Systems, IoT
+Experience: 10 years in automotive
+Education: MS in Electrical Engineering
+",bob johnson senior engineer skills c embedded systems iot experience 10 years in automotive education ms in electrical engineering,Engineering
+Engineering,resume3.txt,"Mike Davis
+Software Developer
+Skills: JavaScript, React, Node.js
+Experience: 3 years full-stack development
+Education: BS in Computer Science
+",mike davis software developer skills javascript react node js experience 3 years full stack development education bs in computer science,Engineering
+IT,it_resume1.txt,"Ahmed Hassan
+IT Systems Administrator
+Email: ahmed@email.com | Phone: +212-600-000000
+
+PROFESSIONAL SUMMARY
+Experienced IT professional with 6 years in system administration, network management, and technical support.
+
+TECHNICAL SKILLS
+- Operating Systems: Windows Server, Linux, Ubuntu, CentOS
+- Networking: TCP/IP, DNS, DHCP, VPN, Firewall configuration
+- Virtualization: VMware, Hyper-V, VirtualBox
+- Cloud: Azure, AWS basics
+- Scripting: PowerShell, Bash, Python
+- Database: MySQL, SQL Server
+- Monitoring: Nagios, Zabbix
+
+PROFESSIONAL EXPERIENCE
+Senior System Administrator | Tech Solutions Morocco | 2020-Present
+- Manage 200+ servers and workstations
+- Implement backup and disaster recovery solutions
+- Configure and maintain network infrastructure
+- Provide Level 3 technical support
+
+IT Administrator | Digital Services | 2018-2020
+- Maintained Windows and Linux servers
+- Managed Active Directory and user accounts
+- Configured network devices and security systems
+
+EDUCATION
+Bachelor's Degree in Computer Science
+Hassan II University, Casablanca, 2017
+
+CERTIFICATIONS
+- Microsoft Certified: Azure Administrator
+- CompTIA Network+
+- CCNA Routing and Switching
+",ahmed hassan it systems administrator email phone 212 600 000000 professional summary experienced it professional with 6 years in system administration network management and technical support technical skills operating systems windows server linux ubuntu centos networking tcp ip dns dhcp vpn firewall configuration virtualization vmware hyper v virtualbox cloud azure aws basics scripting powershell bash python database mysql sql server monitoring nagios zabbix professional experience senior system administrator tech solutions morocco 2020 present manage 200 servers and workstations implement backup and disaster recovery solutions configure and maintain network infrastructure provide level 3 technical support it administrator digital services 2018 2020 maintained windows and linux servers managed active directory and user accounts configured network devices and security systems education bachelor s degree in computer science hassan ii university casablanca 2017 certifications microsoft certified azure administrator comptia network ccna routing and switching,IT
+IT,it_resume2.txt,"Fatima Zahra
+IT Support Specialist
+Contact: fatima.z@email.com
+
+PROFILE
+Dedicated IT support professional with strong troubleshooting skills and customer service experience.
+
+SKILLS
+- Help Desk Support
+- Windows 10/11, macOS
+- Office 365, Microsoft Teams
+- Remote Desktop Support
+- Ticketing Systems: ServiceNow, Jira
+- Hardware Troubleshooting
+- Network Troubleshooting
+- Active Directory Management
+
+WORK EXPERIENCE
+IT Support Specialist | Moroccan Bank | 2019-Present
+- Provide technical support to 500+ users
+- Resolve hardware and software issues
+- Install and configure workstations
+- Manage user accounts in Active Directory
+- Document solutions in knowledge base
+
+Junior IT Technician | IT Services Co. | 2017-2019
+- Provided first-line technical support
+- Performed system maintenance
+- Assisted with network setup
+
+EDUCATION
+Diploma in Information Technology
+ISTA Casablanca, 2016
+
+LANGUAGES
+Arabic (Native), French (Fluent), English (Professional)
+",fatima zahra it support specialist contact profile dedicated it support professional with strong troubleshooting skills and customer service experience skills help desk support windows 10 11 macos office 365 microsoft teams remote desktop support ticketing systems servicenow jira hardware troubleshooting network troubleshooting active directory management work experience it support specialist moroccan bank 2019 present provide technical support to 500 users resolve hardware and software issues install and configure workstations manage user accounts in active directory document solutions in knowledge base junior it technician it services co 2017 2019 provided first line technical support performed system maintenance assisted with network setup education diploma in information technology ista casablanca 2016 languages arabic native french fluent english professional,IT
+IT,it_resume3.txt,"Youssef Benali
+IT Project Manager & Business Analyst
+Email: y.benali@email.com | LinkedIn: linkedin.com/in/ybenali
+
+SUMMARY
+Results-driven IT professional with 8+ years managing technology projects and analyzing business requirements.
+
+CORE COMPETENCIES
+- Project Management (Agile, Scrum, Waterfall)
+- Business Analysis & Requirements Gathering
+- IT Strategy & Planning
+- Stakeholder Management
+- Risk Management
+- Budget Management
+- Team Leadership
+
+TECHNICAL SKILLS
+- Project Management Tools: Jira, Trello, MS Project
+- Documentation: Confluence, SharePoint
+- Analysis: UML, BPMN, Use Cases
+- Databases: SQL, Oracle
+- Basic Programming: Java, Python
+- BI Tools: Power BI, Tableau
+
+PROFESSIONAL EXPERIENCE
+IT Project Manager | Telecom Company Morocco | 2020-Present
+- Lead IT projects with budgets up to $2M
+- Manage cross-functional teams of 10-15 members
+- Coordinate with vendors and stakeholders
+- Ensure project delivery on time and within budget
+- Implemented new CRM system serving 50,000 customers
+
+Business Analyst | Financial Services | 2017-2020
+- Analyzed business processes and requirements
+- Created functional specifications
+- Facilitated workshops with stakeholders
+- Supported system implementation and testing
+
+IT Consultant | Consulting Firm | 2015-2017
+- Provided IT consulting to various clients
+- Conducted system audits and assessments
+
+EDUCATION
+Master's Degree in Information Systems Management
+Al Akhawayn University, Ifrane, 2015
+
+CERTIFICATIONS
+- PMP (Project Management Professional)
+- PRINCE2 Practitioner
+- Certified Scrum Master (CSM)
+- ITIL Foundation
+",youssef benali it project manager business analyst email linkedin linkedin com in ybenali summary results driven it professional with 8 years managing technology projects and analyzing business requirements core competencies project management agile scrum waterfall business analysis requirements gathering it strategy planning stakeholder management risk management budget management team leadership technical skills project management tools jira trello ms project documentation confluence sharepoint analysis uml bpmn use cases databases sql oracle basic programming java python bi tools power bi tableau professional experience it project manager telecom company morocco 2020 present lead it projects with budgets up to 2m manage cross functional teams of 10 15 members coordinate with vendors and stakeholders ensure project delivery on time and within budget implemented new crm system serving 50 000 customers business analyst financial services 2017 2020 analyzed business processes and requirements created functional specifications facilitated workshops with stakeholders supported system implementation and testing it consultant consulting firm 2015 2017 provided it consulting to various clients conducted system audits and assessments education master s degree in information systems management al akhawayn university ifrane 2015 certifications pmp project management professional prince2 practitioner certified scrum master csm itil foundation,IT
+IT,it_resume4.txt,"Karim El Amrani
+Network Engineer
+Email: k.elamrani@email.com | Phone: +212-661-123456
+
+OBJECTIVE
+Experienced Network Engineer seeking to leverage expertise in network design, implementation, and security.
+
+TECHNICAL EXPERTISE
+Networking:
+- Cisco Routers & Switches (2900, 3850, 4500 series)
+- Network Protocols: OSPF, EIGRP, BGP, MPLS
+- VLANs, STP, VTP, HSRP
+- QoS, ACLs
+- SD-WAN solutions
+
+Security:
+- Firewalls: Cisco ASA, Palo Alto, Fortinet
+- VPN: Site-to-Site, Remote Access
+- Network Security Monitoring
+- IDS/IPS systems
+
+Wireless:
+- Cisco Wireless Controllers
+- Access Point deployment and configuration
+- WiFi security standards
+
+Tools:
+- Wireshark, SolarWinds, NetFlow Analyzer
+- GNS3, Packet Tracer
+
+PROFESSIONAL HISTORY
+Senior Network Engineer | ISP Morocco | 2018-Present
+- Design and implement enterprise networks
+- Manage WAN/LAN infrastructure for 1000+ sites
+- Perform network capacity planning
+- Lead network migration projects
+- Provide L3 network support
+
+Network Engineer | Corporate IT Department | 2015-2018
+- Configured and maintained Cisco network equipment
+- Implemented network security policies
+- Monitored network performance
+- Troubleshot connectivity issues
+
+EDUCATION
+Engineering Degree in Telecommunications
+INPT Rabat, 2014
+
+CERTIFICATIONS
+- CCNP Enterprise
+- CCNA Security
+- Fortinet NSE 4
+- CompTIA Security+
+",karim el amrani network engineer email phone 212 661 123456 objective experienced network engineer seeking to leverage expertise in network design implementation and security technical expertise networking cisco routers switches 2900 3850 4500 series network protocols ospf eigrp bgp mpls vlans stp vtp hsrp qos acls sd wan solutions security firewalls cisco asa palo alto fortinet vpn site to site remote access network security monitoring ids ips systems wireless cisco wireless controllers access point deployment and configuration wifi security standards tools wireshark solarwinds netflow analyzer gns3 packet tracer professional history senior network engineer isp morocco 2018 present design and implement enterprise networks manage wan lan infrastructure for 1000 sites perform network capacity planning lead network migration projects provide l3 network support network engineer corporate it department 2015 2018 configured and maintained cisco network equipment implemented network security policies monitored network performance troubleshot connectivity issues education engineering degree in telecommunications inpt rabat 2014 certifications ccnp enterprise ccna security fortinet nse 4 comptia security,IT
+IT,it_resume5.txt,"Sarah Alaoui
+IT Security Analyst
+Email: s.alaoui@cybersec.ma
+
+PROFESSIONAL PROFILE
+Cybersecurity professional specializing in threat analysis, incident response, and security operations.
+
+SECURITY SKILLS
+- SIEM: Splunk, QRadar, ArcSight
+- Vulnerability Assessment: Nessus, OpenVAS, Qualys
+- Penetration Testing: Metasploit, Burp Suite, Kali Linux
+- Security Frameworks: ISO 27001, NIST, CIS Controls
+- Incident Response & Forensics
+- Malware Analysis
+- Security Auditing & Compliance
+- Threat Intelligence
+
+TECHNICAL SKILLS
+- Operating Systems: Windows, Linux (Kali, Ubuntu), macOS
+- Networking: TCP/IP, Firewalls, IDS/IPS
+- Scripting: Python, PowerShell, Bash
+- Cloud Security: Azure Security Center, AWS Security
+
+EXPERIENCE
+Security Analyst | Financial Institution | 2019-Present
+- Monitor security events using SIEM platform
+- Investigate and respond to security incidents
+- Conduct vulnerability assessments
+- Develop security policies and procedures
+- Perform security awareness training
+- Coordinate with SOC team
+
+Junior Security Analyst | Tech Company | 2017-2019
+- Analyzed security logs and alerts
+- Assisted in incident response
+- Conducted security scans
+- Documented security findings
+
+EDUCATION
+Master's in Cybersecurity
+Mohammed V University, Rabat, 2017
+
+Bachelor's in Computer Science
+2015
+
+CERTIFICATIONS
+- CEH (Certified Ethical Hacker)
+- CompTIA Security+
+- ISO 27001 Lead Implementer
+- CHFI (Computer Hacking Forensic Investigator)
+
+LANGUAGES
+Arabic, French, English
+",sarah alaoui it security analyst email professional profile cybersecurity professional specializing in threat analysis incident response and security operations security skills siem splunk qradar arcsight vulnerability assessment nessus openvas qualys penetration testing metasploit burp suite kali linux security frameworks iso 27001 nist cis controls incident response forensics malware analysis security auditing compliance threat intelligence technical skills operating systems windows linux kali ubuntu macos networking tcp ip firewalls ids ips scripting python powershell bash cloud security azure security center aws security experience security analyst financial institution 2019 present monitor security events using siem platform investigate and respond to security incidents conduct vulnerability assessments develop security policies and procedures perform security awareness training coordinate with soc team junior security analyst tech company 2017 2019 analyzed security logs and alerts assisted in incident response conducted security scans documented security findings education master s in cybersecurity mohammed v university rabat 2017 bachelor s in computer science 2015 certifications ceh certified ethical hacker comptia security iso 27001 lead implementer chfi computer hacking forensic investigator languages arabic french english,IT
+Marketing,resume1.txt,"Jane Smith
+Marketing Manager
+Skills: Social Media, Content Strategy, Analytics
+Experience: 7 years at Marketing Firm
+Education: MBA in Marketing
+",jane smith marketing manager skills social media content strategy analytics experience 7 years at marketing firm education mba in marketing,Marketing
+Marketing,resume2.txt,"Sarah Williams
+Digital Marketing Specialist
+Skills: SEO, SEM, Email Marketing
+Experience: 4 years at Tech Startup
+Education: BS in Marketing
+",sarah williams digital marketing specialist skills seo sem email marketing experience 4 years at tech startup education bs in marketing,Marketing
